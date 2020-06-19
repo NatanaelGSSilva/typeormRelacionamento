@@ -1,0 +1,47 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.labelFormat": "short",
+    "workbench.colorTheme": "Dracula",
+    "workbench.startupEditor": "newUntitledFile",
+
+    "editor.suggestSelection": "first",
+    "editor.accessibilityPageSize": 14,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 22,
+    "editor.tabSize": 2,
+    "editor.rulers": [80,120],
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+
+    "emmet.syntaxProfiles": {"javascript": "jsx"},
+    "emmet.includeLanguages": {"javascript": "javascriptreact"},
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": -1,
+    "terminal.integrated.fontSize": 14,
+    "vsicons.dontShowNewVersionMessage": true
+}
