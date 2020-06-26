@@ -19,7 +19,7 @@ export default abstract class Pessoa {
   email: string;
 
   @Column()
-  age: number;
+  dataNascimento: Date;
 
   @CreateDateColumn({ name: 'created_At' })
   createdAt: Date;
