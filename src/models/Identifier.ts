@@ -7,9 +7,8 @@ import {
   TableInheritance,
 } from 'typeorm';
 
-@Entity('pessoa')
-@TableInheritance({ column: { type: 'varchar', name: 'type' } })
-export default abstract class Pessoa {
+
+export default abstract class Identifier {
   @PrimaryGeneratedColumn()
   id: number;
 

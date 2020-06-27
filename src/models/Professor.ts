@@ -1,8 +1,12 @@
 import { Entity, Column, ChildEntity } from 'typeorm';
-import Pessoa from './Pessoa';
+import Identifier from './Identifier';
 
-@ChildEntity()
-export default class Professor extends Pessoa {
+@Entity()
+export default class Professor {
+
+  @Column(type => Identifier)
+  identification: Identifier;
+
   @Column()
   materia: string;
 
