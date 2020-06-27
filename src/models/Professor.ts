@@ -1,8 +1,11 @@
-import { Entity, Column } from 'typeorm';
+import { Entity, Column, ChildEntity } from 'typeorm';
 import Pessoa from './Pessoa';
 
-@Entity('professor')
+@ChildEntity()
 export default class Professor extends Pessoa {
   @Column()
   materia: string;
+
+  @Column()
+  sala: string;
 }

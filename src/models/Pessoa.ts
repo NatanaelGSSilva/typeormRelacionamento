@@ -4,11 +4,12 @@ import {
   UpdateDateColumn,
   PrimaryGeneratedColumn,
   Column,
+  TableInheritance,
 } from 'typeorm';
 
-// @Entity('animal')
+@Entity('pessoa')
+@TableInheritance({ column: { type: 'varchar', name: 'type' } })
 export default abstract class Pessoa {
-
   @PrimaryGeneratedColumn()
   id: number;
 

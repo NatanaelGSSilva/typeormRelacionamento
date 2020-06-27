@@ -1,8 +1,11 @@
-import { Entity, Column } from 'typeorm';
+import { Entity, Column, ChildEntity } from 'typeorm';
 import Pessoa from './Pessoa';
 
-@Entity('diretor')
+@ChildEntity()
 export default class Diretor extends Pessoa {
   @Column()
   setor: string;
+
+  @Column()
+  responsabilidade: string;
 }
