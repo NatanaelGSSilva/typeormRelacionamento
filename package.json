@@ -25,7 +25,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "class-validator": "^0.12.2",
+    "class-validator": "^0.14.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.2.1",
